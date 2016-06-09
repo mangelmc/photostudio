@@ -1,0 +1,47 @@
+/* CSS declarations go here */
+/*este es el comiezo de nuestros estilos del navbar*/
+.navbar-wrapper {
+	background: #222;
+}
+.navbar-wrapper .di {
+	color:#999;
+	border:2px solid;	
+}
+.navbar-wrapper .di h5{
+	color:white;
+	font-size:12px;
+	text-align: right;
+	padding: 5px;
+}
+.navbar-wrapper .row h1{
+	padding: 25px;
+	font-size: 70px;
+	color:white;
+}
+#menu{
+	border:2px solid;
+	color:#999;
+}
+
+
+/*este es el final de nuestros estilos del navbar*/
+
+/*este es el comienzo de nuestros estilos del home*/
+#back{
+	background-color:#999;
+}
+
+#parrafo{
+	padding:1em 5em;
+	border: 5em;
+}
+
+#parrafo p{
+	border:1px solid;
+	color:#a00;
+}
+
+/*este es el final de nuestros estilos del home*/
+#padd{
+	padding: 15px 1px;
+}

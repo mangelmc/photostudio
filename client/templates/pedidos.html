@@ -1,0 +1,49 @@
+<template name="pedidos">
+	<div>
+		<ul>
+			{{#each PEDIDO}}
+				<li>
+					{{>caracteristica}}
+				</li>
+			{{/each}}
+		</ul>
+	</div>
+</template>
+
+
+<template name="caracteristica">
+	<div class="panel panel-default">
+		
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<div>
+				<h3 class="panel-title">PEDIDO DE NUESTGRO CLIENTE:</h3>
+					{{cliente}}
+				</div>
+			</div>
+			<div class="panel-body">
+				<a href=""><img src="{{image}}" class="img-responsive" alt="Image"></a>
+				<div>
+					<h3>Recorte :</h3>
+					{{recorte}}	
+				</div>
+				<div>
+					<h3>Saturacion :</h3>
+					{{saturacion}}	
+				</div>
+				<div>
+					<h3>Brillo :</h3>
+					{{brillo}}	
+				</div>
+				<div>
+					<h3>Sombra :</h3>
+					{{sombra}}	
+				</div>
+				<div>
+					<h3>Retoque :</h3>
+					{{retoque}}	
+				</div>
+			</div>
+		</div>
+	</div>
+</template>

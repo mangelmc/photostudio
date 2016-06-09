@@ -1,0 +1,61 @@
+<template name="uploads">
+   	<div class="container">
+   		<div class="row">
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+			{{>pedidos}}			
+		</div>
+		{{#if currentUser}}
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+			
+			<img src="{{URL}}" width="200px" />
+			{{> upload_bootstrap multiple='true'}}
+			<form action="" id="formupload" method="POST" class="form-vertical" role="form">
+				<div class="form-group" align="center">
+					<legend>Opciones de Imagen</legend>
+				</div>
+				<input type="text" value="{{URL}}" name="image">
+				<input type="text" name="cliente" id="inputTitle" class="form-control" disabled="true" value="{{cliente}}" >
+				<h1><span class="label label-default">RECORTE :</span></h1>
+				<select name="recorte" id="inputTipo_recorte" class="form-control">
+					<option value="ninguno">NINGUNO</option>
+					<option value="basico">BASICO</option>
+					<option value="intermedio">INTERMEDIO</option>
+					<option value="avanzado">AVANZADO</option>
+				</select>
+				<h1><span class="label label-default">SATURACION :</span></h1>
+				<select name="saturacion" id="inputTipo_saturacion" class="form-control">
+					<option value="ninguno">NINGUNO</option>
+					<option value="basico">BASICO</option>
+					<option value="intermedio">INTERMEDIO</option>
+					<option value="avanzado">AVANZADO</option>
+				</select>
+				<h1><span class="label label-default">BRILLO :</span></h1>
+				<select name="brillo" id="inputTipo_brillo" class="form-control">
+					<option value="ninguno">NINGUNO</option>
+					<option value="basico">SUAVE</option>
+					<option value="intermedio">FUERTE</option>
+				</select>
+				<h1><span class="label label-default">RETOQUE :</span></h1>
+				<select name="retoque" id="inputTipo_brillo" class="form-control">
+					<option value="ninguno">NINGUNO</option>
+					<option value="basico">BASICO</option>
+					<option value="intermedio">INTERMEDIO</option>
+					<option value="avanzado">AVANZADO</option>
+				</select>
+				<h1><span class="label label-default">SOMBRA :</span></h1>
+				<select name="sombra" id="inputsombra" class="form-control">
+					<option value="NO">NO</option>
+					<option value="SI">Si</option>
+				</select><br>
+				<div class="form-group">
+					<div class="" align="center">
+						<button class="btn btn-large btn-primary" type="submit" id="btnsend">Guardar Cambios</button>
+					</div>
+				</div>
+			</form>		
+		</div>
+		{{/if}}
+	</div>	
+   	</div>
+   	
+</template>
